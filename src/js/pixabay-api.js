@@ -9,11 +9,7 @@ export class PixabayAPI {
   q = null;
 
   fetchPhoto() {
-    const axiosInstance = axios.create({
-      baseURL: this.#BASE_URL,
-    });
-
-    return axiosInstance.get('', {
+    return axios.get(`${this.#BASE_URL}?`, {
       params: {
         key: this.#API_KEY,
         image_type: 'photo',
