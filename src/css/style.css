@@ -19,6 +19,7 @@ p {
 }
 
 body {
+  margin-top: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
   color: #212121;
@@ -32,6 +33,8 @@ body {
   width: 100%;
   margin-bottom: 16px;
   background-color: gold;
+  position: fixed;
+  z-index: 100;
 }
 
 .load-more {
@@ -64,6 +67,7 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  padding-top: 50px;
 }
 
 .gallery_item {

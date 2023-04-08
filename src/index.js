@@ -17,6 +17,7 @@ const handleSearchFoto = async ev => {
   ev.preventDefault();
   galleryEl.innerHTML = '';
   loadMoreBtnEl.classList.add('is-hidden');
+  pixabayApi.page = 1;
 
   const serchItemEl = ev.target.elements['searchQuery'].value.trim();
 
