@@ -25,12 +25,13 @@ body {
 }
 
 #search-form {
+  display: flex;
+  justify-content: center;
   font: inherit;
   padding: 8px;
-  max-width: 350px;
+  width: 100%;
   margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: gold;
 }
 
 .load-more {
@@ -43,6 +44,14 @@ body {
 
 button {
   border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(90, 90, 228);
+  color: #fafafa;
+}
+
+button:hover {
+  background-color: rgb(78, 184, 225);
+  color: #212121;
 }
 
 .is-hidden {
@@ -57,12 +66,22 @@ button {
   gap: 20px;
 }
 
+.gallery_item {
+  height: 100%;
+}
+
 .photo-card {
   width: 350px;
   height: 100%;
   padding-bottom: 10px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
 }
 
 .gallery_img {
